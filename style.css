@@ -11,7 +11,7 @@
   --color-light-pink: hsl(321, 100%, 78%);
   --color-red: hsl(0, 100%, 63%);
   --color-cyan: hsl(192, 100%, 9%);
-  --color-blue: hsl(207, 100%, 98%);
+  --color-blue: hsl(202, 100%, 98%);
   --color-white: hsl(0, 0%, 100%);
 }
 
@@ -141,4 +141,55 @@ header {
   color: var(--color-cyan);
   opacity: 0.5;
   text-transform: capitalize;
+}
+
+.grow {
+  position: relative;
+  margin-top: 17em;
+  padding-top: 4em;
+  padding-bottom: 2em;
+  background-color: var(--color-blue);
+}
+
+.grow::before,
+.grow::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10em;
+  left: 0;
+  right: 0;
+}
+
+.grow::before {
+  bottom: 100%;
+  background: url("./images/bg-section-top-desktop-1.svg") no-repeat;
+}
+
+.grow::after {
+  top: 100%;
+  background: url("./images/bg-section-bottom-desktop-1.svg") no-repeat;
+}
+
+.grow-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grow-illustration,
+.grow-info {
+  width: 45%;
+}
+
+.grow-title {
+  font-size: 2.3rem;
+  margin-bottom: 0.6em;
+}
+
+.grow-desc {
+  font-size: 0.95rem;
 }
