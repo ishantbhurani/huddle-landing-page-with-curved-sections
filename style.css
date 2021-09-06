@@ -12,6 +12,7 @@
   --color-red: hsl(0, 100%, 63%);
   --color-cyan: hsl(192, 100%, 9%);
   --color-blue: hsl(207, 100%, 98%);
+  --color-white: hsl(0, 0%, 100%);
 }
 
 body {
@@ -19,6 +20,7 @@ body {
   min-height: 100vh;
   font-family: "Open Sans", sans-serif;
   color: var(--color-cyan);
+  margin-left: 0.6em;
 }
 
 h1,
@@ -28,4 +30,41 @@ h4,
 h5,
 h6 {
   font-family: "Poppins", sans-serif;
+}
+
+button {
+  background: none;
+  color: inherit;
+  outline: transparent;
+  border: transparent;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+header {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4.5em auto;
+}
+
+.header-logo {
+  width: 14em;
+  display: inline-block;
+}
+
+.header-cta {
+  background: var(--color-white);
+  color: var(--color-pink);
+  font-size: 1rem;
+  border: 1px solid var(--color-pink);
+  border-radius: 5em;
+  padding: 0.6em 1.6em;
+  transition: all 0.2s ease-in-out;
+}
+
+.header-cta:hover {
+  color: var(--color-light-pink);
+  border-color: var(--color-light-pink);
 }
