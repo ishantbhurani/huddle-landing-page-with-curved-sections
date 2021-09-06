@@ -404,3 +404,19 @@ footer::before {
 .social-link:focus {
   color: hsl(180, 100%, 50%);
 }
+
+@media screen and (max-width: 768px) {
+  .hero-desc {
+    width: 100%;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-submit {
+    width: max-content;
+    margin: 0;
+    margin-left: auto;
+  }
+}
