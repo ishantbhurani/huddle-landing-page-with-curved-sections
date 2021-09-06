@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-pink: hsl(322, 100%, 66%);
+  --color-light-pink: hsl(321, 100%, 78%);
+  --color-red: hsl(0, 100%, 63%);
+  --color-cyan: hsl(192, 100%, 9%);
+  --color-blue: hsl(207, 100%, 98%);
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  color: var(--color-cyan);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
