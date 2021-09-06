@@ -20,7 +20,6 @@ body {
   min-height: 100vh;
   font-family: "Open Sans", sans-serif;
   color: var(--color-cyan);
-  margin-left: 0.6em;
 }
 
 h1,
@@ -67,4 +66,79 @@ header {
 .header-cta:hover {
   color: var(--color-light-pink);
   border-color: var(--color-light-pink);
+}
+
+.hero {
+  width: 90%;
+  margin: 13.5em auto 0;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  margin-bottom: 0.45em;
+  text-transform: capitalize;
+}
+
+.hero-desc {
+  width: 46%;
+  margin: 0 auto;
+  font-size: 1.185rem;
+  line-height: 1.5;
+}
+
+.hero-cta {
+  display: block;
+  margin: 2.5em auto 6em;
+  padding: 1.55em 5.25em;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  border-radius: 5em;
+  letter-spacing: 1px;
+  box-shadow: 0 6px 1em -0.5em var(--color-cyan);
+  transition: all 0.2s ease-in-out;
+}
+
+.hero-cta:hover,
+.hero-cta:focus {
+  background-color: var(--color-light-pink);
+}
+
+.hero-illustration {
+  width: 80%;
+}
+
+.stats {
+  width: 95%;
+  margin: 9em auto 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.stat {
+  position: relative;
+}
+
+.stat-icon {
+  position: absolute;
+  top: -2em;
+  left: 0.5em;
+  width: 2.5em;
+}
+
+.stat-title {
+  font-size: 5.5rem;
+  font-weight: bold;
+}
+
+.stat-desc {
+  margin-top: 0.5em;
+  font-size: 1.4rem;
+  color: var(--color-cyan);
+  opacity: 0.5;
+  text-transform: capitalize;
 }
