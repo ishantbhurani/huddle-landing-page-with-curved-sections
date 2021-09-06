@@ -254,3 +254,148 @@ header {
   box-shadow: 0 6px 1em -0.5em var(--color-cyan);
   transition: all 0.2s ease-in-out;
 }
+
+footer {
+  position: relative;
+  background-color: var(--color-cyan);
+  color: var(--color-blue);
+  padding: 7em 0;
+  margin-top: 20em;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 9.8em;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  background: url(./images/bg-footer-top-desktop.svg) no-repeat;
+}
+
+.footer-container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  width: 13em;
+  margin-bottom: 1.5em;
+  filter: invert(99%) sepia(96%) saturate(7159%) hue-rotate(179deg)
+    brightness(112%) contrast(104%);
+}
+
+.contact {
+  width: 45%;
+}
+
+.address {
+  font-weight: bold;
+  font-size: 0.8rem;
+  width: 60%;
+  line-height: 1.6;
+  margin-bottom: 2em;
+}
+
+.phone-wrapper,
+.email-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.3em;
+  margin-bottom: 1em;
+  font-size: 0.95rem;
+  margin-left: 0.2em;
+}
+
+.newsletter {
+  width: 45%;
+}
+
+.newsletter-title {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  margin-bottom: 0.8em;
+}
+
+.newsletter-desc {
+  width: 65%;
+  font-size: 0.8rem;
+  font-weight: bold;
+  line-height: 1.6;
+  margin-bottom: 2.5em;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 2em;
+}
+
+.newsletter-form:invalid .error {
+  opacity: 1;
+}
+
+.form-group {
+  position: relative;
+}
+
+.newsletter-email {
+  width: 23em;
+  padding: 1em;
+  border: transparent;
+  outline: transparent;
+  border-radius: 0.4em;
+}
+
+.error {
+  position: absolute;
+  font-size: 0.7rem;
+  margin-top: 0.3em;
+  margin-left: 0.3em;
+  color: var(--color-red);
+  opacity: 0;
+}
+
+.newsletter-submit {
+  font-size: 0.95rem;
+  font-weight: bold;
+  padding: 0.8em 2.5em;
+  background-color: var(--color-pink);
+  border-radius: 0.4em;
+  transition: all 0.2s ease-in-out;
+}
+
+.newsletter-submit:hover,
+.newsletter-submit:focus {
+  background-color: var(--color-light-pink);
+}
+
+.social-links-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 0.8em;
+  font-size: 2rem;
+  margin-top: 1.5em;
+}
+
+.social-link {
+  color: inherit;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: hsl(180, 100%, 50%);
+}
