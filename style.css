@@ -143,7 +143,8 @@ header {
   text-transform: capitalize;
 }
 
-.grow {
+.grow,
+.your-users {
   position: relative;
   margin-top: 17em;
   padding-top: 4em;
@@ -152,13 +153,19 @@ header {
 }
 
 .grow::before,
-.grow::after {
+.grow::after,
+.your-users::before,
+.your-users::after {
   content: "";
   position: absolute;
   width: 100%;
-  height: 10em;
   left: 0;
   right: 0;
+}
+
+.grow::before,
+.grow::after {
+  height: 10em;
 }
 
 .grow::before {
@@ -172,7 +179,8 @@ header {
 }
 
 .grow-container,
-.conversations {
+.conversations,
+.your-users-container {
   width: 80%;
   margin: 0 auto;
   display: flex;
@@ -184,22 +192,41 @@ header {
 .grow-illustration,
 .grow-info,
 .conversations-illustation,
-.conversations-info {
+.conversations-info,
+.your-users-illustration,
+.your-users-info {
   width: 45%;
 }
 
 .grow-title,
-.conversations-title {
+.conversations-title,
+.your-users-title {
   font-size: 2.3rem;
   margin-bottom: 0.6em;
 }
 
 .grow-desc,
-.conversations-desc {
+.conversations-desc,
+.your-users-desc {
   font-size: 0.95rem;
 }
 
 .conversations {
   margin-top: 21em;
   flex-direction: row;
+}
+
+.your-users::before,
+.your-users::after {
+  height: 9em;
+}
+
+.your-users::before {
+  bottom: 100%;
+  background: url("./images/bg-section-top-desktop-2.svg") no-repeat;
+}
+
+.your-users::after {
+  top: 100%;
+  background: url("./images/bg-section-bottom-desktop-2.svg") no-repeat;
 }
