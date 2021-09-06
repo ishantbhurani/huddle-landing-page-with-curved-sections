@@ -255,6 +255,11 @@ header {
   transition: all 0.2s ease-in-out;
 }
 
+.cta-cta:hover,
+.cta-cta:focus {
+  background-color: var(--color-light-pink);
+}
+
 footer {
   position: relative;
   background-color: var(--color-cyan);
