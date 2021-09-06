@@ -171,7 +171,8 @@ header {
   background: url("./images/bg-section-bottom-desktop-1.svg") no-repeat;
 }
 
-.grow-container {
+.grow-container,
+.conversations {
   width: 80%;
   margin: 0 auto;
   display: flex;
@@ -181,15 +182,24 @@ header {
 }
 
 .grow-illustration,
-.grow-info {
+.grow-info,
+.conversations-illustation,
+.conversations-info {
   width: 45%;
 }
 
-.grow-title {
+.grow-title,
+.conversations-title {
   font-size: 2.3rem;
   margin-bottom: 0.6em;
 }
 
-.grow-desc {
+.grow-desc,
+.conversations-desc {
   font-size: 0.95rem;
+}
+
+.conversations {
+  margin-top: 21em;
+  flex-direction: row;
 }
