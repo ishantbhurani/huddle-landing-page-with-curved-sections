@@ -420,3 +420,169 @@ footer::before {
     margin-left: auto;
   }
 }
+
+@media screen and (max-width: 480px) {
+  header {
+    margin: 1.5em auto;
+  }
+
+  .header-logo {
+    width: 7.5em;
+  }
+
+  .header-cta {
+    font-size: 0.8rem;
+  }
+
+  .hero {
+    margin-top: 8em;
+  }
+
+  .hero-title {
+    font-size: 1.6rem;
+  }
+
+  .hero-desc {
+    width: 85%;
+    font-size: 0.85rem;
+  }
+
+  .hero-cta {
+    margin-top: 4em;
+    margin-bottom: 8em;
+    font-size: 0.8rem;
+    padding: 1.2em 3.5em;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 8em;
+  }
+
+  .stat-icon {
+    width: 2em;
+  }
+
+  .stat-title {
+    font-size: 4rem;
+  }
+
+  .stat-desc {
+    font-size: 1rem;
+  }
+
+  .grow,
+  .your-users {
+    margin-top: 15em;
+  }
+
+  .grow-container,
+  .conversations,
+  .your-users-container {
+    flex-direction: column;
+    gap: 5em;
+  }
+
+  .grow-illustration,
+  .conversations-illustation,
+  .your-users-illustration {
+    width: 80%;
+  }
+
+  .grow-info,
+  .conversations-info,
+  .your-users-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .grow-title,
+  .conversations-title,
+  .your-users-title,
+  .cta-title {
+    font-size: 1.5rem;
+  }
+
+  .cta {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .cta-cta {
+    font-size: 0.8rem;
+    padding: 1.2em 3.5em;
+    margin: 3em auto;
+  }
+
+  footer {
+    padding-bottom: 3em;
+  }
+
+  .footer-content {
+    flex-direction: column-reverse;
+    gap: 5em;
+  }
+
+  .footer-logo {
+    margin-bottom: 0.8em;
+  }
+
+  .contact {
+    width: 95%;
+  }
+
+  .address {
+    width: 100%;
+  }
+
+  .newsletter {
+    width: 95%;
+  }
+
+  .newsletter-desc {
+    width: 100%;
+  }
+
+  .social-links-list {
+    margin-top: 1em;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .grow::before {
+    background: url(./images/bg-section-top-mobile-1.svg) no-repeat;
+    height: 7em;
+  }
+
+  .grow::after {
+    background: url(./images/bg-section-bottom-mobile-1.svg) no-repeat;
+  }
+
+  .your-users::before {
+    height: 6.4em;
+    background: url(./images/bg-section-top-mobile-2.svg) no-repeat;
+  }
+
+  .your-users::after {
+    background: url(./images/bg-section-bottom-mobile-2.svg) no-repeat;
+  }
+
+  footer::before {
+    height: 3.3em;
+    background: url(./images/bg-footer-top-mobile.svg) no-repeat;
+  }
+
+  .conversations {
+    margin-top: 12em;
+  }
+
+  .grow {
+    margin-top: 10em;
+  }
+
+  .your-users {
+    margin-top: 15em;
+    margin-bottom: 10em;
+    padding-bottom: 8em;
+  }
+}
